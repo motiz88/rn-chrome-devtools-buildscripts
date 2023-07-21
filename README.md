@@ -4,7 +4,7 @@
 2. `git clone https://github.com/motiz88/rn-chrome-devtools-buildscripts`
 3. `cd rn-chrome-devtools-buildscripts`
 4. `gclient sync --no-history`
-5. For local development, you may at this point delete the `devtools-frontend` directory, create a symlink to your `rn-chrome-devtools-frontend` checkout in its place, and run `gclient sync --no-history` again.
+5. For local development, you may at this point delete the `devtools-frontend` directory, create a symlink to your [`rn-chrome-devtools-frontend`](https://github.com/motiz88/rn-chrome-devtools-frontend) checkout in its place, and run `gclient sync --no-history` again.
 6. `cd devtools-frontend`
 7. Generate Ninja build files: `gn gen out/Default`
 8. Build: `autoninja -C out/default`
