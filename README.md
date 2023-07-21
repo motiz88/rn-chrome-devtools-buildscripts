@@ -12,6 +12,7 @@
 ## Running a build of Chrome DevTools in hosted mode
 
 1. Start a static web server: `python3 -m http.server 8000 --directory out/Default/gen/front_end`
-2. The frontend is available at `http://localhost:8000/inspector.html`. You can connect this frontend to a target by adding the `?ws=` parameter (take its value from the target's `devtoolsFrontendUrl`).
+2. The frontend is available at `http://localhost:8000/inspector.html` (or `http://localhost:8000/rn_inspector.html` for the RN-specific entry point).
+3. You can connect the frontend to a target by adding the appropriate `?ws=` parameter to the above URL. To build this parameter manually, take the target's `devtoolsFrontendUrl`, remove the leading `ws://` and pass it through URL encoding.
 
 See https://github.com/ChromeDevTools/devtools-frontend/blob/main/docs/workflows.md for more general information about development workflows in the Chrome DevTools codebase.
