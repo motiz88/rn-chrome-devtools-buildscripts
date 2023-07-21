@@ -15,4 +15,6 @@
 2. The frontend is available at `http://localhost:8000/inspector.html` (or `http://localhost:8000/rn_inspector.html` for the RN-specific entry point).
 3. You can connect the frontend to a target by adding the appropriate `?ws=` parameter to the above URL. To build this parameter manually, take the target's `devtoolsFrontendUrl`, remove the leading `ws://` and pass it through URL encoding.
 
+> **NOTE:** You may need to *open DevTools for DevTools* and select "Disable cache" for your build changes to be picked up when you refresh.
+
 See https://github.com/ChromeDevTools/devtools-frontend/blob/main/docs/workflows.md for more general information about development workflows in the Chrome DevTools codebase.
