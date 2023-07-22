@@ -18,3 +18,7 @@
 > **NOTE:** You may need to *open DevTools for DevTools* and select "Disable cache" for your build changes to be picked up when you refresh.
 
 See https://github.com/ChromeDevTools/devtools-frontend/blob/main/docs/workflows.md for more general information about development workflows in the Chrome DevTools codebase.
+
+## Using the CI-built version
+
+The modified frontend is deployed continuously to https://rn-chrome-devtools-frontend.netlify.app/rn_inspector.html. It is built by a [GitHub Action](https://github.com/motiz88/rn-chrome-devtools-frontend/blob/main/.github/workflows/build.yml) based on the instructions above.
